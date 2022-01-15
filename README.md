@@ -1,6 +1,6 @@
 # Flavinho27.github.io
 
-Hey guys !
+Hey guys ! 🙌
 
 Welcome to my first page in GitHub.
 
