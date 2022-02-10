@@ -11,14 +11,11 @@ html {
 
 body {
     background-color: #050c13;
+    height: 100vh;
 }
 
-header {
-    /* width: 100vw; */
-    background-color: #111d4a;
-    text-align: center;
-    padding: 50px 0 50px 0;
-    font-size: 2rem;
+h1 {
+    font-size: 4rem;
 }
 
 h3 {
@@ -31,14 +28,54 @@ p {
 }
 
 /*------------------------------------------*/
-/* MyProjects */
+
+header {
+    position: relative;
+    background-color: #111d4a;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-socialmedia {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeea;
+    border-radius: 5px;
+}
+
+.socialmedia-button {
+    width: 3rem;
+}
+
+a.socialmedia-link {
+    margin: 1rem;
+}
+
+a.socialmedia-link:hover .socialmedia-button {
+    transform: rotate(30deg);
+    background-color: #050c13;
+    transition: 0.3s;
+}
+
+/*---------- MyProjects ----------*/
 
 section.myProjects {
     background: #050c13;
-    height: 100%;
+    height: 80%;
     padding: 20rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /* Fin MyProjects */
@@ -50,8 +87,9 @@ section.myProjects {
     border: 2px solid #f80040;
     perspective: 500px;
     margin: 5rem;
-    box-shadow: 0px 0px 30px 10px #f80040;
+    box-shadow: 0px 0px 40px 0px #f80040;
     border-radius: 8px;
+    background: #eeeeea;
 }
 
 .box-project {
@@ -67,14 +105,13 @@ section.myProjects {
 .flip-box-front {
     background-color: #eeeeea;
     color: #111d4a;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
-/* .flip-box-front > h3 {
-    color: #111d4a;
-} */
+.flip-box-front > h3 {
+    text-align: start;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
 
 .flip-box-back {
     background-color: #f80040;
@@ -111,6 +148,35 @@ section.myProjects {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
+
+    animation-name: anim-DashLegends;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+
+@keyframes anim-DashLegends{
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    25% {
+        transform: translate(-50%, -42%);
+    }
+    50% {
+        transform: translate(-50%, -50%);
+    }
+    75% {
+        transform: translate(-50%, -58%);
+    }
+}
+
+.logoDashLegendsOmbre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 90%);
+    width: 50%;
 }
 
 .cavavin .flip-box-front {
@@ -120,16 +186,3 @@ section.myProjects {
     background-position: center;
     color: #eeeeea;
 }
-
-/* .DashLegends .flip-box-front {
-    background-image: url('../img/DashLegendsLogo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-    color: #eeeeea;
-} */
-
-/* .cavavin .flip-box-front > h3 {
-    color: #eeeeea;
-} */
-
