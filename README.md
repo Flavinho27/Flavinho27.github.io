@@ -1,7 +1,7 @@
 # Flavinho27.github.io
 
-Hey guys ! 🙌
+Hey !
 
-Welcome to my first page in GitHub.
+Vous trouverez ici mes différents projets. 🔨
 
-I've made this page by following the instructions of an application intituled "Mimo".
+À bientôt ! 🙌
