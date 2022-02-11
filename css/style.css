@@ -190,13 +190,13 @@ section.myProjects {
         transform: translate(-50%, 90%) scale(1);
     }
     25% {
-        transform: translate(-50%, 90%) scale(0.90);
+        transform: translate(-50%, 90%) scale(1.10);
     }
     50% {
         transform: translate(-50%, 90%) scale(1);
     }
     75% {
-        transform: translate(-50%, 90%) scale(1.10);
+        transform: translate(-50%, 90%) scale(0.90);
     }
 }
 
