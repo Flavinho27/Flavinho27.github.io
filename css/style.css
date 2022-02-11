@@ -200,6 +200,10 @@ section.myProjects {
     }
 }
 
+.otherDev {
+    color: #111d4a;
+}
+
 .cavavin .flip-box-front {
     background-image: url('../img/vinBg.jpg');
     background-repeat: no-repeat;
