@@ -177,6 +177,27 @@ section.myProjects {
     left: 50%;
     transform: translate(-50%, 90%);
     width: 50%;
+
+    animation-name: anim-DashLegendsOmbre;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+
+@keyframes anim-DashLegendsOmbre{
+    0% {
+        transform: translate(-50%, 90%) scale(1);
+    }
+    25% {
+        transform: translate(-50%, 90%) scale(0.90);
+    }
+    50% {
+        transform: translate(-50%, 90%) scale(1);
+    }
+    75% {
+        transform: translate(-50%, 90%) scale(1.10);
+    }
 }
 
 .cavavin .flip-box-front {
